@@ -1,4 +1,4 @@
-package com.andy.study.线性表;
+package com.andy.study.数据结构和算法.线性表;
 
 /**
  * Created by 坎坎 on 2017/12/20.
