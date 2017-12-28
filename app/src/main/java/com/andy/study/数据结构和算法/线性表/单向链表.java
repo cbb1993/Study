@@ -11,8 +11,6 @@ public class 单向链表 {
         linkedList.add(2);
         linkedList.add(3);
 
-
-
         linkedList.reverse2(linkedList.first);
         for (int i = 0; i < linkedList.size; i++) {
             System.out.println(linkedList.get(i));

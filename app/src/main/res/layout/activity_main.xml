@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.andy.study.MainActivity">
 
-  <com.andy.study.UI.Shadow.ZoomImageView
+  <com.andy.study.UI.paint.GuaGuaCardView_SRCOUT
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      android:layout_height="wrap_content"/>
 
 </android.support.constraint.ConstraintLayout>
