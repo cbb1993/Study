@@ -13,6 +13,7 @@ import android.view.View;
 import com.andy.study.R;
 
 /**
+ * Shader的使用
  * Created by 坎坎 on 2017/12/21.
  */
 
