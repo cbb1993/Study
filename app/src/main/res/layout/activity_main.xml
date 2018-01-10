@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.andy.study.MainActivity">
 
-  <com.andy.study.UI.paint.FilterView
+  <com.andy.study.UI.paint.AlphaFilterView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
 

@@ -3,7 +3,6 @@ package com.andy.study.UI.paint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.EmbossMaskFilter;
@@ -20,13 +19,13 @@ import com.andy.study.R;
  * Created by 坎坎 on 2018/1/4.
  */
 
-public class FilterView extends View {
+public class AlphaFilterView extends View {
 
     Paint paint;
 
     Bitmap bitmap;
 
-    public FilterView(Context context, @Nullable AttributeSet attrs) {
+    public AlphaFilterView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
     }
