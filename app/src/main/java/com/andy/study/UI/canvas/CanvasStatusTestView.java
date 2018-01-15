@@ -60,17 +60,16 @@ public class CanvasStatusTestView extends View {
             canvas.drawRect(r2,paint); */
 
             //我们有上面的图可以看出 我们设置开始的是200*200的矩形， 但是我们只绘了一个蓝色100*100的矩形
-            //可以看出 r2是绘制在新的layer上的 ，但是layer的绘图坐标系继承的canvas的绘图坐标系，所以还是从0.0开始，
+            //可以看出 r2是绘制在新的layer上的 ，但是layer的绘图坐标系继承的canvas的绘图坐标系，所以还是从(0,0)开始，
             //得出--》实际绘制区域（100，100，200，200）
 
          /*-------出栈------*/
             paint.setColor(Color.BLUE);
-            int id1=canvas.saveLayer(new RectF(100,100,getWidth(),getHeight()),paint);
+            int id1=canvas.saveLayer(new RectF(100,100,getWidth(),getHeight()),null,Canvas.ALL_SAVE_FLAG);
             RectF r2 = new RectF(0, 0, 200, 200);
             canvas.drawRect(r2,paint);
 
-            paint.setColor(Color.BLUE);
-            int id2=canvas.saveLayer(new RectF(200,200,getWidth(),getHeight()),paint);
+            int id2=canvas.saveLayer(new RectF(200,200,getWidth(),getHeight()),null,Canvas.ALL_SAVE_FLAG);
             RectF r3 = new RectF(0, 0, 300, 300);
             canvas.drawRect(r3,paint);
 
@@ -78,7 +77,7 @@ public class CanvasStatusTestView extends View {
             canvas.restoreToCount(id2);
             canvas.drawCircle(50,50,50,paint);
 
-            // 经过测试 我们得出  canvas.restoreToCount(id2)方法会将id2层出栈
+            // 经过测试 我们得出  canvas.restoreToCount(id2)方法会将id2层及上面的都出栈，根据设置的flag，绘图更新到对应的图层和画布上
             //此时 绘图坐标系 （0,0） ，id1为（100,100,getWidth(),getHeight()）
             //当我们绘制circle（50，50，50），是看不见的
             //当坐标原点>100,才能绘制，绘制在id1层
