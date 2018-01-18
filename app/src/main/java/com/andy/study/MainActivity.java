@@ -18,12 +18,6 @@ public class MainActivity extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mQqBubble =findViewById(R.id.drag_buddle_view);
-        findViewById(R.id.reset_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mQqBubble.reset();
-            }
-        });
+
     }
 }
