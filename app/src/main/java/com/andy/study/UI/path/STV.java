@@ -29,10 +29,6 @@ import java.lang.annotation.RetentionPolicy;
 import static android.animation.ValueAnimator.INFINITE;
 import static android.animation.ValueAnimator.REVERSE;
 
-/**
- * Created by fangda on 2017/5/25.
- */
-
 public class STV extends View {
     private static final int DEFAULT = 0;
     private static final int FIRST_ANIM = 1;
