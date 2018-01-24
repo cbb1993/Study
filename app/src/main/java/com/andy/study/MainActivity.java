@@ -13,7 +13,6 @@ import com.andy.study.UI.贝塞尔曲线.QqBubble;
 
 public class MainActivity extends Activity{
 
-    private QqBubble mQqBubble;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
