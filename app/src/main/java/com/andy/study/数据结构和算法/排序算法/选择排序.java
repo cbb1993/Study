@@ -44,7 +44,7 @@ public class 选择排序 {
                     index = j;
                 }
             }
-            if (index != i) {//表示打到过最小值
+            if (index != i) {
                 int temp = array[i];
                 array[i] = array[index];
                 array[index] = temp;
