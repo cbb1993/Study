@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+/*
+* aspectj 配置文件
+* */
 buildscript {
     repositories {
         mavenCentral()
@@ -38,6 +41,10 @@ dependencies {
 
 }
 
+
+/*
+* aspectj 配置文件
+* */
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
