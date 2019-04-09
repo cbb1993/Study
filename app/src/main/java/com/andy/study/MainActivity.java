@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.andy.study.UI.贝塞尔曲线.QqBubble;
-
 /**
  * Created by 坎坎 on 2017/12/21.
  */
@@ -18,5 +16,12 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.tv_anim).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
     }
+
+
 }
